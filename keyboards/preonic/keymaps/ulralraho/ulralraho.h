@@ -138,7 +138,8 @@ enum ulralraho_keycodes
 #define NUM_SPC  LT(LayerNUMPAD, KC_SPC)    /* 홀드: 숫자레이어, 탭: SPACE */
 #define NUM_BSP  LT(LayerNUMPAD, KC_BSPC)   /* 홀드: 숫자레이어, 탭: BackSPACE */
 #define NUM_HAN  LT(LayerNUMPAD, KC_HAEN)   /* 홀드: 숫자레이어, 탭: 한영 */
-//#define NUM_Z    LT(LayerNUMPAD, KC_Z)      /* 홀드: 숫자레이어, 탭: Z     */
+#define NUM_Z    LT(LayerNUMPAD, KC_Z)      /* 홀드: 숫자레이어, 탭: Z     */
+#define NUM_A    LT(LayerNUMPAD, KC_A)      /* 홀드: 숫자레이어, 탭: A     */
 //#define NUM_SLSH LT(LayerNUMPAD, KC_SLSH)   /* 홀드: 숫자레이어, 탭: Slash     */
 //#define NUM_ENT  LT(LayerNUMPAD, KC_ENT)    /* 홀드: 숫자레이어, 탭: ENTER */
 

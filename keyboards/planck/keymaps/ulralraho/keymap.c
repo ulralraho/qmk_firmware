@@ -82,9 +82,9 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
  * |     TAB|MOU q Q |    w W |    e E |    r R |    t T |    y Y |    u U |    i I |    o O |    p P |     BSP|
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
- * |LSF  ESC|    a A |    s S |    d D |    f F |    g G |    h H |    j J |    k K |    l L |    ; : |RSF  ENT|
+ * |LSF  ESC|NUM a A |    s S |    d D |    f F |    g G |    h H |    j J |    k K |    l L |    ; : |RSF  ENT|
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
- * |NUM 한영|    z Z |    x X |    c C |    v V |    b B |    n N |    m M |    , < |    . > |    / ? |    ' " |
+ * |NUM 한영|NUM z Z |    x X |    c C |    v V |    b B |    n N |    m M |    , < |    . > |    / ? |    ' " |
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
  * |FN      |GUI     |Alt     |CTL     |SYM  SPC|FN   SPC|FN   SPC|EDI  SPC|  Left  |  Down  |   UP   | Right  |
  * `-----------------------------------------------------------------------------------------------------------'
@@ -95,8 +95,8 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
     KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TD_MNEQ,
 #endif
     KC_TAB,  MOU_Q,   KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
-    LS_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, RS_ENT,
-    NUM_HAN, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_QUOT,
+    LS_ESC,  NUM_A,   KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, RS_ENT,
+    NUM_HAN, NUM_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_QUOT,
     FUNCTN,  KC_LGUI, KC_LALT, KC_LCTL, SYM_SPC, FNC_SPC, FNC_SPC, EDI_SPC, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
   ),
 
