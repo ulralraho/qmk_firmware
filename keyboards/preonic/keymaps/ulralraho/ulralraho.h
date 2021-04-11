@@ -182,4 +182,11 @@ enum ulralraho_keycodes
 #define CTL_V    LCTL(KC_V)
 #define CTL_Y    LCTL(KC_Y)
 
+#define CAP_A    LSFT(KC_A)
+#define CAP_B    LSFT(KC_B)
+#define CAP_C    LSFT(KC_C)
+#define CAP_D    LSFT(KC_D)
+#define CAP_E    LSFT(KC_E)
+#define CAP_F    LSFT(KC_F)
+
 #endif // ULRALRAHO_H

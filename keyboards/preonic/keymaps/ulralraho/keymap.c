@@ -82,7 +82,7 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
  * |     TAB|MOU q Q |    w W |    e E |    r R |    t T |    y Y |    u U |    i I |    o O |    p P |     BSP|
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
- * |LSF  ESC|NUM a A |    s S |    d D |    f F |    g G |    h H |    j J |    k K |    l L |    ; : |RSF  ENT|
+ * |LSF  ESC|    a A |    s S |    d D |    f F |    g G |    h H |    j J |    k K |    l L |    ; : |RSF  ENT|
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
  * |NUM 한영|NUM z Z |    x X |    c C |    v V |    b B |    n N |    m M |    , < |    . > |    / ? |    ' " |
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
@@ -95,7 +95,7 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
     KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TD_MNEQ,
 #endif
     KC_TAB,  MOU_Q,   KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
-    LS_ESC,  NUM_A,   KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, RS_ENT,
+    LS_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, RS_ENT,
     NUM_HAN, NUM_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_QUOT,
     FUNCTN,  KC_LGUI, KC_LALT, KC_LCTL, SYM_SPC, FNC_SPC, FNC_SPC, EDI_SPC, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
   ),
@@ -156,7 +156,7 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
  * |LSF  ESC|   LSFT | NUMPAD |    {   |    }   |    |   |    _   |    (   |    )   |    - _ |    :   |RSF  ENT|
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
- * |NUM 한영|        |    ~   |    <   |    >   |        |    \ | |    = + |    , < |    . > |    / ? |     "  |
+ * |NUM 한영|    ?   |    ~   |    <   |    >   |    +   |    \ | |    = + |    , < |    . > |    / ? |     "  |
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
  * |FN      |GUI     |Alt     |CTL     |NUM  SPC|FN   SPC|FN   SPC|EDI  SPC|  Home  |  PGDN  |  PGUP  |  End   |
  * `-----------------------------------------------------------------------------------------------------------'
@@ -168,7 +168,7 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
 #endif
     KC_GRV,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LBRC, KC_RBRC, KC_BSPC,
     KC_TRNS, KC_LSFT, NUMPAD,  KC_LCBR, KC_RCBR, KC_PIPE, KC_UNDS, KC_LPRN, KC_RPRN, KC_MINS, KC_COLN, RS_ENT,
-    KC_TRNS, KC_NO,   KC_TILD, KC_LT,   KC_GT,   KC_NO,   KC_BSLS, KC_EQL,  KC_COMM, KC_DOT,  KC_SLSH, KC_DQUO,
+    KC_TRNS, KC_QUES, KC_TILD, KC_LT,   KC_GT,   KC_PLUS, KC_BSLS, KC_EQL,  KC_COMM, KC_DOT,  KC_SLSH, KC_DQUO,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_HOME, KC_PGDN, KC_PGUP, KC_END
   ),
 
@@ -176,11 +176,11 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
  * ,-----------------------------------------------------------------------------------------------------------.
  * |     `  |    1   |    2   |    3   |    4   |    5   |    6   |    7   |    8   |    9   |    0   |= + - _ |
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
- * |     TAB|        |        |        |        |        |    *   |    7 & |    8 * |    9 ( |    , < |     BSP|
+ * |     TAB|        |        |    E   |    F   |        |    *   |    7 & |    8 * |    9 ( |    , < |     BSP|
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
- * |LSF  ESC|   LSFT | NUMPAD |        |        |        |    -   |    4 $ |    5 % |    6 ^ |    . > |RSF  ENT|
+ * |LSF  ESC|   LSFT | NUMPAD |    C   |    D   |        |    -   |    4 $ |    5 % |    6 ^ |    . > |RSF  ENT|
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
- * |NUM 한영|        |        |        |        |        |    +   |    1 ! |    2 @ |    3 # |    / ? |    "   |
+ * |NUM 한영| NUMPAD |    x X |    A   |    B   |        |    +   |    1 ! |    2 @ |    3 # |    / ? |    "   |
  * |--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
  * |FN      |GUI     |Alt     |CTL     |NUM  SPC|FN   SPC|FN   SPC|    0 ) |    , < |    . > | NUMLCK |        |
  * `-----------------------------------------------------------------------------------------------------------'
@@ -190,9 +190,9 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
 #if forPREONIC == yes
     KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TD_MNEQ,
 #endif
-    KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_PAST, KC_7,    KC_8,    KC_9,    KC_COMM, KC_BSPC,
-    KC_TRNS, KC_LSFT, KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_PMNS, KC_4,    KC_5,    KC_6,    KC_PDOT, RS_ENT,
-    KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_PPLS, KC_1,    KC_2,    KC_3,    KC_SLSH, KC_DQUO,
+    KC_TRNS, KC_NO,   KC_NO,   CAP_E,   CAP_F,   KC_NO,   KC_PAST, KC_7,    KC_8,    KC_9,    KC_COMM, KC_BSPC,
+    KC_TRNS, KC_LSFT, KC_TRNS, CAP_C,   CAP_D,   KC_NO,   KC_PMNS, KC_4,    KC_5,    KC_6,    KC_PDOT, RS_ENT,
+    KC_TRNS, KC_TRNS, KC_X,    CAP_A,   CAP_B,   KC_NO,   KC_PPLS, KC_1,    KC_2,    KC_3,    KC_SLSH, KC_DQUO,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_0,    KC_COMM, KC_PDOT, KC_NLCK, KC_NO
   ),
 
