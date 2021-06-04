@@ -191,7 +191,7 @@ const u16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
     KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    TD_MNEQ,
 #endif
     KC_TRNS, KC_NO,   KC_NO,   CAP_E,   CAP_F,   KC_NO,   KC_PAST, KC_7,    KC_8,    KC_9,    KC_COMM, KC_BSPC,
-    KC_TRNS, KC_LSFT, KC_TRNS, CAP_C,   CAP_D,   KC_NO,   KC_PMNS, KC_4,    KC_5,    KC_6,    KC_PDOT, RS_ENT,
+    KC_TRNS, KC_LSFT, KC_TRNS, CAP_C,   CAP_D,   KC_NO,   KC_PMNS, KC_4,    KC_5,    KC_6,    KC_DOT,  RS_ENT,
     KC_TRNS, KC_TRNS, KC_X,    CAP_A,   CAP_B,   KC_NO,   KC_PPLS, KC_1,    KC_2,    KC_3,    KC_SLSH, KC_DQUO,
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_0,    KC_COMM, KC_PDOT, KC_NLCK, KC_NO
   ),
